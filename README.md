@@ -1,2 +1,2 @@
 # TrabalhoArquitetura
-# NASM version 2.11.05
+NASM version 2.11.05
