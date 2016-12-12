@@ -1,3 +1,4 @@
 # TrabalhoArquitetura
+Especificações:
 NASM version 2.11.05
-Ubuntu 15.10
+e Ubuntu 15.10
