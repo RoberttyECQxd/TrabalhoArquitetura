@@ -24,12 +24,12 @@ section .text
 _start:
 	
 	mov ecx,10
-    mov eax,'0'
+        mov eax,'0'
 	mov ebp, vetA
 
 l1:
 	mov [num],eax
-    push ecx
+        push ecx
     
 	mov eax, 4
 	mov ebx, 1
@@ -62,27 +62,27 @@ l1:
 	mov [ebp], eax
 	
 	mov eax, [num]	
-    sub eax, '0'
-    inc eax
-    inc ebp
-    add eax, '0'
-    pop ecx
+        sub eax, '0'
+        inc eax
+        inc ebp
+        add eax, '0'
+        pop ecx
     
-    loop l1
+        loop l1
     
-    mov eax, 4
+        mov eax, 4
 	mov ebx, 2
 	mov ecx, msg6
 	mov edx, lenmsg6
 	int 80h
 	
-    mov ecx,10
-    mov eax,'0'
+        mov ecx,10
+        mov eax,'0'
 	mov ebp, vetB
 
 l2:
 	mov [num],eax
-    push ecx
+        push ecx
     
 	mov eax, 4
 	mov ebx, 1
@@ -116,26 +116,26 @@ l2:
 	
 	
 	mov eax, [num]	
-    sub eax, '0'
-    inc eax
-    inc ebp
-    add eax, '0'
-    pop ecx
+        sub eax, '0'
+        inc eax
+        inc ebp
+        add eax, '0'
+        pop ecx
     
-    loop l2
+        loop l2
     
     
 	mov ecx, 10
-    mov ebp, vetA
-    mov eax, vetB
-    mov edx, vetC
+        mov ebp, vetA
+        mov eax, vetB
+        mov edx, vetC
 	
 soma:
 	mov ebx, 0
 	push ecx
     
-    add ebx, [ebp]
-    add ebx, [eax]
+        add ebx, [ebp]
+        add ebx, [eax]
 	
 	mov [edx], ebx
 	
@@ -145,15 +145,15 @@ soma:
 	
 	pop ecx
     
-    loop soma
+        loop soma
     
-    mov ecx,10
-    mov eax,'0'
-    mov ebp, vetC
+        mov ecx,10
+        mov eax,'0'
+        mov ebp, vetC
 
 l3:
 	mov [num],eax
-    push ecx
+        push ecx
     
 	mov eax, 4
 	mov ebx, 1
@@ -188,12 +188,12 @@ l3:
 	inc ebp
 
 	mov eax, [num]	
-    sub eax, '0'
-    inc eax
-    add eax, '0'
-    pop ecx
+        sub eax, '0'
+        inc eax
+        add eax, '0'
+        pop ecx
     
-    loop l3
+        loop l3
 	
 	mov eax, 4
 	mov ebx, 2
